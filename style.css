@@ -1,0 +1,256 @@
+:root {
+  --bg-color: #0d1117;
+  --bg-alt: #161b22;
+  --card-bg: #21262d;
+  --accent: #58a6ff;
+  --accent-hover: #1f6feb;
+  --text-main: #c9d1d9;
+  --text-heading: #ffffff;
+  --border-color: #30363d;
+  --whatsapp-color: #25d366;
+  --whatsapp-hover: #1da851;
+  --instagram-color: #e1306c;
+  --facebook-color: #1877f2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: rgba(13, 17, 23, 0.9);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid var(--border-color);
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: var(--text-heading);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+nav a {
+  color: var(--text-main);
+  text-decoration: none;
+  margin-left: 20px;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  padding: 80px 0;
+  text-align: center;
+  background: radial-gradient(circle at top, #161b22 0%, #0d1117 100%);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: var(--text-heading);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-whatsapp {
+  background-color: var(--whatsapp-color);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn-whatsapp:hover {
+  background-color: var(--whatsapp-hover);
+}
+
+.full-width {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.bg-alt {
+  background-color: var(--bg-alt);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--text-heading);
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h3 {
+  color: var(--text-heading);
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.card-featured {
+  position: relative;
+  border-color: var(--accent);
+}
+
+.badge {
+  position: absolute;
+  top: -12px;
+  right: 15px;
+  background-color: var(--accent);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 12px;
+}
+
+.info-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.info-box h3 {
+  color: var(--text-heading);
+  margin-bottom: 10px;
+}
+
+/* FOOTER Y REDES SOCIALES */
+footer {
+  border-top: 1px solid var(--border-color);
+  padding: 40px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  background-color: var(--bg-alt);
+}
+
+.footer-content h3 {
+  color: var(--text-heading);
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.social-btn:hover {
+  opacity: 0.85;
+}
+
+.social-btn.instagram {
+  background-color: var(--instagram-color);
+}
+
+.social-btn.facebook {
+  background-color: var(--facebook-color);
+}
+
+.social-btn.whatsapp {
+  background-color: var(--whatsapp-color);
+}
